@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/listItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hs1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Rose Villa"
+        android:textColor="@color/textColorDark2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/listItemImage"
+        app:layout_constraintTop_toTopOf="@+id/listItemImage" />
+
+    <TextView
+        android:id="@+id/listItemLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Koramangala, Banglore"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/listItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/listItemTitle" />
+
+    <ImageView
+        android:id="@+id/listItemStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_stars"
+        app:layout_constraintStart_toStartOf="@+id/listItemLocation"
+        app:layout_constraintTop_toBottomOf="@+id/listItemLocation" />
+
+    <TextView
+        android:id="@+id/listItemStarsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="(120)"
+        android:textColor="@color/textColorOpen"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemStars"
+        app:layout_constraintStart_toEndOf="@+id/listItemStars"
+        app:layout_constraintTop_toTopOf="@+id/listItemStars" />
+
+    <ImageView
+        android:id="@+id/listItemHearth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintStart_toStartOf="@+id/listItemStars"
+        app:layout_constraintTop_toBottomOf="@+id/listItemStars" />
+
+    <TextView
+        android:id="@+id/listItemRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="8k"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/textColorOpen"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemHearth"
+        app:layout_constraintStart_toEndOf="@+id/listItemHearth"
+        app:layout_constraintTop_toTopOf="@+id/listItemHearth" />
+
+    <ImageView
+        android:id="@+id/listItemMessageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_message"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemRating"
+        app:layout_constraintStart_toEndOf="@+id/listItemRating"
+        app:layout_constraintTop_toTopOf="@+id/listItemRating" />
+
+    <TextView
+        android:id="@+id/listItemMessageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="990"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/textColorOpen"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemMessageIcon"
+        app:layout_constraintStart_toEndOf="@+id/listItemMessageIcon"
+        app:layout_constraintTop_toTopOf="@+id/listItemMessageIcon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

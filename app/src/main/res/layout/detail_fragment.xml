@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/detailImage"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:background="@drawable/detailpicture"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/detailBackNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_navleft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/detailImage" />
+
+    <View
+        android:id="@+id/detailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/detail_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Blue House"
+        android:textColor="@color/textColorDark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detailContainer" />
+
+    <TextView
+        android:id="@+id/detailLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="Indiranagr, Banglore"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/detailTitle"
+        app:layout_constraintStart_toStartOf="@+id/detailTitle"
+        app:layout_constraintTop_toBottomOf="@+id/detailTitle" />
+
+    <ImageView
+        android:id="@+id/detailStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/ic_stars"
+        app:layout_constraintEnd_toEndOf="@+id/detailLocation"
+        app:layout_constraintStart_toStartOf="@+id/detailLocation"
+        app:layout_constraintTop_toBottomOf="@+id/detailLocation" />
+
+    <ImageView
+        android:id="@+id/detailIconGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_guest"
+        app:layout_constraintBottom_toBottomOf="@+id/detailContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailStars"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/detailGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="4 guest"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailIconGuest"
+        app:layout_constraintStart_toEndOf="@+id/detailIconGuest"
+        app:layout_constraintTop_toTopOf="@+id/detailIconGuest" />
+
+    <ImageView
+        android:id="@+id/detailIconPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/detailIconGuest"
+        app:layout_constraintTop_toBottomOf="@+id/detailIconGuest"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/detailPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Doctor on call"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailIconPhone"
+        app:layout_constraintStart_toStartOf="@+id/detailGuest"
+        app:layout_constraintTop_toTopOf="@+id/detailIconPhone" />
+
+
+    <TextView
+        android:id="@+id/detailBreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Breakfast"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/detailContainer"
+        app:layout_constraintTop_toTopOf="@+id/detailGuest"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/detailIconBreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_breakfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/detailBreakfast"
+        app:layout_constraintTop_toTopOf="@+id/detailBreakfast"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/detailSpecification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Specification"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/detailIconPhone"
+        app:layout_constraintTop_toBottomOf="@+id/detailIconPhone"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/detailSpecificationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:text="● Comfortable house with newly as Renovated kitchen and bathroom.\n\n● Highly modified stainless steel Appliances.\n\n● The space fits four and centrally Located in
+quiet street.\n\n● Comfortable house with exposed Bricks
+there is true city feeling."
+        app:layout_constraintStart_toStartOf="@+id/detailSpecification"
+        app:layout_constraintTop_toBottomOf="@+id/detailSpecification" />
+
+
+    <TextView
+        android:id="@+id/detailFooterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="From Rs1500/night"
+        android:textColor="@color/primaryColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/detailSpecification"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:fontFamily="@font/poppins"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:id="@+id/detailBookNowButton"
+        android:background="@drawable/button_background"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Book now"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/detailContainer"
+        app:layout_constraintEnd_toEndOf="@+id/detailContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
